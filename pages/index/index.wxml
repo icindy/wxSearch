@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="section">
+  <view>
+    <input class="" placeholder="这是一个可以自动聚焦的input" auto-focus/>
+  </view>
+  <view>
+    <button>取消</button>
+  </view>
+</view>
