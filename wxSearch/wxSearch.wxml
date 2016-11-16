@@ -1,0 +1,25 @@
+<template name="wxSearch">
+  <view class="wxSearch" style="display:{{wxSearchData.view.isShow ? 'block':'none'}};top:{{wxSearchData.view.barHeight}}px;">
+    <view  class="wxSearchInner">
+        <view class="wxSearchKey">
+            <text class="wxSearchTitle">热门搜索</text>
+            <view class="wxSearchKeyList">
+                <block wx:for="{{wxSearchData.keys}}">
+                    <view class="wxSearchKeyItem" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</view>
+                </block>
+            </view>
+        </view>
+        <view class="wxSearchHistory">
+            <text class="wxSearchTitle">搜索历史</text>
+            <view class="wxSearchHistoryList">
+                <block wx:for="{{wxSearchData.his}}">
+                    <view class="wxSearchHistoryItem">
+                        <text class="wxSearchHistoryItemText" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}</text> 
+                        <text class="wxSearchHistoryItemDel" bindtap="wxSearchDeleteKey" data-key="{{item}}" data-key="{{item}}">删除</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+  </view>
+</template>

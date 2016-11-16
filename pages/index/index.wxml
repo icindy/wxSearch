@@ -1,9 +1,11 @@
 <!--index.wxml-->
-<view class="section">
-  <view>
-    <input class="" placeholder="这是一个可以自动聚焦的input" auto-focus/>
-  </view>
-  <view>
-    <button>取消</button>
+
+<import src="/wxSearch/wxSearch.wxml"/>
+
+<view class="wxSearch-section">
+  <view class="wxSearch-pancel">
+    <input bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索" />
+    <button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
   </view>
 </view>
+<template is="wxSearch" data="{{wxSearchData}}"/>
