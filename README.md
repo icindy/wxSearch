@@ -1,4 +1,5 @@
 # wxSearch
+
 - 🔍 微信小程序优雅的搜索框
 
 ## 来源
@@ -13,7 +14,7 @@
 [微信小程序开发论坛](http://weappdev.com)
 垂直微信小程序开发交流社区
 
-![小码消息](images/qr.png)
+![小码消息](images/qr.PNG)
 
 ## 特性
 
