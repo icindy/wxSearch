@@ -9,3 +9,9 @@
   </view>
 </view>
 <template is="wxSearch" data="{{wxSearchData}}"/>
+<view class="container">
+  <view style="font-size:20px;margin-top:10px;">微信小程序开发论坛-weappdev</view>
+  <view>wxSearch-weappdev.com</view>
+  <image style="width:90%;" src="/images/qr.png" mode="aspectFit" />
+  <image style="width:70%;" src="/images/logo.png" mode="aspectFit" />
+</view>
