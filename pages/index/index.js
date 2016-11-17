@@ -15,11 +15,16 @@ Page({
     var that = this
     //初始化的时候渲染wxSearchdata
     WxSearch.init(that,43,['关键词1','关键词2','关键词3','关键词4','关键词5','关键词6','关键词7']);
-    
+    WxSearch.initMindKeys(['你好啊','我们在那里']);
   },
   wxSearchFn: function(e){
     var that = this
     WxSearch.wxSearchAddHisKey(that);
+    
+  },
+  wxSearchInput: function(e){
+    var that = this
+    WxSearch.wxSearchInput(e,that);
   },
   wxSerchFocus: function(e){
     var that = this
@@ -36,5 +41,13 @@ Page({
   wxSearchDeleteKey: function(e){
     var that = this
     WxSearch.wxSearchDeleteKey(e,that);
+  },
+  wxSearchDeleteAll: function(e){
+    var that = this;
+    WxSearch.wxSearchDeleteAll(that);
+  },
+  wxSearchTap: function(e){
+    var that = this
+    WxSearch.wxSearchHiddenPancel(that);
   }
 })
