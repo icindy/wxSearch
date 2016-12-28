@@ -80,7 +80,7 @@ function wxSearchInput(e, that, callBack){
             }
         }
     }
-    
+    temData.value = text;
     temData.mindKeys = mindKeys;
     that.setData({
         wxSearchData: temData
