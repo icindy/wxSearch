@@ -42,7 +42,7 @@
 ＊ 使用
 
 ```
-//wxSearch 暴漏的接口
+//wxSearch 暴露的接口
 
 module.exports = {
     init: init,
